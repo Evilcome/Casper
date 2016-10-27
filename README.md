@@ -1,3 +1,24 @@
+# Modify
+
+- support [Disqus](https://disqus.com/) for each post.
+- move the favicon from `.ico` to `.png`.
+
+After install the theme to your blog, you should add some scripts in your ghost blog Setting > Code Injection > Blog Footer to ensure all feature works well.
+
+- Enable your own disqus:
+```
+<script>
+  (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = '//YOUR_DOMAIN/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+```
+
+------
+
 # Casper
 
 The default theme for [Ghost](http://github.com/tryghost/ghost/).
